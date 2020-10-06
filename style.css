@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+}
+
+.head {
+    width: 100%;
+}
+
+.header h1 {
+    margin: 20px 0 10px;
+    font-size: 1em;
+    font-family: 'Playfair Display', serif;
+}
+
+.paragraph {
+    display: grid;
+    grid-template-columns: max-content auto;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.paragraph img {
+    width: 15px;
+}
+
+.header p {
+    font-style: italic;
+    font-size: 0.8em;
+    margin-left: 9px;
+    margin-top: -5px;
+    color: #4F4F4F;
+    font-weight: 500;
+}
+
+/* Ingredients */
+.ingredient {
+    width: 100%;
+    color: #333;
+    margin-top: 20px;
+}
+
+
+.ingredient label {
+    cursor: auto;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.ingredient input {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: auto 100%;
+    margin-bottom: 10px;
+}
+
+.ingredient-content h2,
+.ingredient-content h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+.ingredient-content h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.ingredient-content h4 {
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.cheesecake {
+    margin-top: 30px;
+}
+
+.card {
+    display: grid;
+    order: -1;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    margin: 30px 0;
+}
+
+.yields {
+    grid-column: 1 / 4;
+    margin-bottom: 5px;
+}
+
+.card .active {
+    width: 100%;
+    color: #F2994A;
+}
+
+.card h5 {
+    font-size: 8px;
+    color: #BDBDBD;
+    font-weight: 700;
+    margin-bottom: 1px;
+    text-transform: uppercase;
+}
+
+.card p {
+    font-size: 11px;
+    color: #333;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card i {
+    font-size: 30px;
+    margin-top: 0px;
+    float: left;
+}
+
+.card h5,
+.card p {
+    margin-left: 40px;
+}
+
+.instruction {
+    width: 90%;
+    margin-top: 30px;
+}
+
+.instruction .form-group {
+    margin-bottom: 40px;
+}
+
+.instruction h1 {
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom: 20px;
+}
+
+.instruction p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.number-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    background-color: orange;
+    border-radius: 6px;
+    margin-right: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.number-container:hover {
+    background: #4F4F4F;
+    /* color: black; */
+}
+
+.number-container h2 {
+
+    margin-top: -10px;
+}
+
+.number-container .fix-number {
+    margin-top: -2px;
+}
+
+
+
+
+.source {
+    color: #BDBDBD;
+    font-size: 12px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+    height: 100px;
+    text-align: center;
+    font-size: 14px;
+    color: #A9A9A9;
+    font-weight: 600;
+}
+
+.footer p {
+    margin-top: 70px;
+}
+
+
+
+
+
+
+
+/* Responsive Breakpoint */
+@media screen and (min-width: 1024px) {
+    .head {
+        width: 80%;
+    }
+
+    .paragraph img {
+        width: 20px;
+    }
+
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    .header p {
+        font-size: 0.9em;
+    }
+
+
+    /* .ingredient {
+        grid-template-columns: 70% auto;
+        border: 3px solid black;
+    } */
+
+    .ingredient-content {
+        width: 60%;
+    }
+
+    .ingredient label {
+        font-size: 14px;
+    }
+
+    .ingredient-content h2 {
+        font-size: 29px;
+    }
+
+    .ingredient-content h4 {
+        font-size: 20px;
+    }
+
+    .card {
+        display: inherit;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+        padding: 50px;
+        margin-left: 14px;
+        order: inherit;
+        border-radius: 12px;
+        float: right;
+    }
+
+    .card h5 {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .card i {
+        font-size: 35px;
+    }
+
+    .card h5,
+    .card p {
+        margin-left: 40px;
+    }
+
+    .prep-time,
+    .cook-time,
+    .total-time {
+        margin-top: 30px;
+        width: 150px;
+    }
+
+    .instruction {
+        width: 60%;
+    }
+
+    .instruction h1 {
+        font-size: 29px;
+    }
+
+    .instruction p {
+        font-size: 15px;
+    }
+
+    .number-container {
+        font-size: 19px;
+    }
+
+    .source {
+        font-size: 16px;
+    }
+
+}
